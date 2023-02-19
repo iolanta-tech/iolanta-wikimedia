@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "iolanta-wikimedia"
+version = "0.1.0"
+description = "Wikimedia connector for Iolanta"
+authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "iolanta_wikimedia"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+iolanta = "^1.0.3"
+urlpath = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+jeeves-yeti-pyproject = "^0.2.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
